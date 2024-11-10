@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Griffith Login</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <link rel="stylesheet" href="static/styles/style.css">
+
+  <link rel="icon" type="imp/png" href="static/images/favicon.png">
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav class="nav">
+      <div class="nav__logo">
+        <a href="#">NKSVN</a>
+      </div>
+      <div class="nav__menu">
+        <ul class="nav__menu-list">
+          <li><a href="#" class="link active">Главная</a></li>
+          <li><a href="#" class="link">О нас</a></li>
+          <li><a href="edit.html" class="link">Эдит</a></li>
+          <li><a href="work.html" class="link">Работа</a></li>
+        </ul>
+      </div>
+      <div class="nav__btn">
+        <button class="btn white-btn" id="log-btn" onclick="login()">Войти</button>
+        <button class="btn" id="reg-btn" onclick="register()">Регистрация</button>
+      </div>
+    </nav>
+
+    <!-- с формой ломается js(( -->
+
+    <div class="form__container">
+      <div class="form__login-container" id="login">
+        <div class="form__register-top">
+          <span>Еще нет аккаунта? <a href="#" onclick="register()">Регистрация</a></span>
+          <p class="form__register-top-text">Войти</p>
+        </div>
+
+        <!-- <form action=""> -->
+        <div class="form__input-box">
+          <input class="input__field" type="email" placeholder="Почта" id="email" name="user__email">
+          <i class="bx bx-envelope"></i>
+        </div>
+
+        <div class="form__input-box">
+          <input class="input__field" type="password" placeholder="Пароль" id="last-name" name="user__password">
+          <i class="bx bx-lock-alt"></i>
+        </div>
+
+        <div class="form__input-box">
+          <input class="submit-btn" type="submit" value="Войти">
+        </div>
+        <!-- </form> -->
+        <div class="form__bottom">
+          <div class="form__bottom-remember">
+            <input type="checkbox" value="remember-me" id="remember-me">
+            <label for="remember-me"> Запомнить</label>
+          </div>
+
+          <div class="form__forgot-pas">
+            <label><a href="#">Забыли пароль?</a></label>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="form__register-container" id="register">
+        <div class="form__register-top">
+          <span>Уже есть аккаунт? <a href="#" onclick="login()">Войти</a></span>
+          <p class="form__register-top-text">Регистрация</p>
+        </div>
+
+        <!-- <form action=""> -->
+        <div class="register__name">
+          <div class="form__input-box">
+            <input class="input__field" type="text" placeholder="Имя" id="first-name" name="user__first-name">
+            <i class="bx bx-user"></i>
+          </div>
+
+          <div class="form__input-box">
+            <input class="input__field" type="text" placeholder="Фамилия" id="last-name" name="user__last-name">
+            <i class="bx bx-user"></i>
+          </div>
+        </div>
+
+        <div class="form__input-box">
+          <input class="input__field" type="email" placeholder="Почта" id="email" name="user__email">
+          <i class="bx bx-envelope"></i>
+        </div>
+
+        <div class="form__input-box">
+          <input class="input__field" type="password" placeholder="Пароль" id="last-name" name="user__password">
+          <i class="bx bx-lock-alt"></i>
+        </div>
+        <div class="gender">
+          <select class="input__field select__field" name="user__gender" id="">
+            <option value="gender" disabled selected>Ваш пол</option>
+            <option value="male">Мужской</option>
+            <option value="female">Женский</option>
+          </select>
+          <i class="bx bx-chevron-down"></i>
+        </div>
+        <div class="form__input-box">
+          <input class="submit-btn" type="submit" value="Зарегистрироваться">
+        </div>
+
+        <div class="form__bottom">
+          <div class="form__bottom-remember">
+            <input type="checkbox" value="remember-me" id="remember-me">
+            <label for="remember-me"> Запомнить</label>
+          </div>
+
+          <div class="form__bottom-terms">
+            <label><a href="#">Условия использования</a></label>
+          </div>
+        </div>
+        <!-- </form> -->
+      </div>
+
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

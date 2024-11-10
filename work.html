@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Griffith Work</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- <link rel="stylesheet" href="static/styles/style.css"> -->
+  <link rel="stylesheet" href="static/styles/work.css">
+
+  <link rel="icon" type="imp/png" href="static/images/favicon.png">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <nav class="nav">
+      <div class="nav__logo">
+        <a href="#">NKSVN</a>
+      </div>
+      <div class="nav__menu">
+        <ul class="nav__menu-list">
+          <li><a href="index.html" class="link">Главная</a></li>
+          <li><a href="#" class="link">О нас</a></li>
+          <li><a href="edit.html" class="link">Эдит</a></li>
+          <li><a href="#" class="link active">Работа</a></li>
+        </ul>
+      </div>
+      <div class="nav__btn">
+        <a href="index.html">
+          <button class="btn" id="log-btn" onclick="login()">Войти</button>
+          <button class="btn" id="reg-btn" onclick="register()">Регистрация</button>
+        </a>
+      </div>
+    </nav>
+    <div class="container__job">
+      <h2>Анкетирование</h2>
+
+      <div class="job-application">
+        <form action="">
+          <div class="name-and-preferences">
+            <div class="name">
+              <div class="form__input-box">
+                <label for="first-name">Имя</label>
+                <br>
+                <input class="input__field" id="first-name" type="text" name="first-name" placeholder="Введите имя">
+              </div>
+              <div class="form__input-box">
+                <label for="last-name">Фамилия</label>
+                <br>
+                <input class="input__field" type="text" id="last-name" name="last-name" placeholder="Введите фамилию">
+              </div>
+              <div class="form__input-box">
+                <label for="patronymic">Отчество</label>
+                <br>
+                <input class="input__field" id="patronymic" type="text" placeholder="Введите отчество">
+              </div>
+            </div>
+
+            <div>
+              <div class="preferences__container">
+                <label for="biography">Предпочтения</label>
+                <br>
+                <textarea class="textarea__field" id="preferences" name="user__preferences"></textarea>
+              </div>
+              <label for="">Специальность</label>
+              <br>
+              <select class="select__field" name="" id="">
+                <option value="">Веб дизайнер</option>
+                <option value="">Графический дизайнер</option>
+                <option value="">Менеджер по продажам</option>
+                <option value="">Фронтенд разработчик</option>
+                <option value="">Бэкенд разработчик</option>
+              </select>
+            </div>
+          </div>
+          <div class="form__input-box porfolio__container">
+            <label for="portfolio">Вставьте ссылку на портфолио</label>
+            <br>
+            <input class="input__field" type="url" id="portfolio" name="user__portfolio">
+          </div>
+          <div class="buttons">
+            <div class="form__input-box">
+              <input class="form__btn" type="submit" value="Отправить данные">
+            </div>
+
+            <div class="form__input-box">
+              <input class="form__btn" type="reset" value="Очистить форму">
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    </form>
+  </div>
+
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

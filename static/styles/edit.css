@@ -1,0 +1,16 @@
+video {
+  max-width: 500px;
+}
+
+.video__container {
+  border: 5px solid #ffffff62;
+  padding: 10px;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  padding-bottom: 30px;
+  color: #fff;
+}

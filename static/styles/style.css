@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", serif;
+}
+
+body {
+  background-image: url(../images/Manga_E77_Castle.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+li {
+  list-style-type: none;
+}
+
+p, span, h1 {
+  color: #fff;
+}
+
+select {
+  appearance: none;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 110vh;
+  background: #292929b5;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  background: linear-gradient(rgba(224, 224, 224, 0.137), transparent);
+  z-index: 100;
+}
+
+.nav__logo a{
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.nav__menu ul {
+  display: flex;
+}
+
+.nav__menu ul li .link {
+  font-weight: 400;
+  padding-bottom: 15px;
+  margin: 0 25px;
+}
+
+.link:hover, .active {
+  border-bottom: 2px solid #fff;
+}
+
+.nav__btn .btn {
+  padding: 10px 30px;
+  font-weight: 500;
+  background: #ffffff71;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.nav__btn .white-btn {
+  background: #ffffffdc;
+}
+
+#reg-btn {
+  margin-left: 15px;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.white-btn:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.form__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 512px;
+  height: 460px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.form__login-container, form {
+  position: absolute;
+  left: 4px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s ease-in-out;
+  margin-left: 5px;
+}
+
+.form__register-container, form {
+  position: absolute;
+  right: -520px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s ease-in-out;
+  margin-left: 5px;
+}
+
+.form__register-top span {
+  font-size: 13px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.form__register-top span a {
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.form__register-top-text {
+  font-size: 30px;
+  padding: 10px 0 30px 0;
+  text-align: center;
+  font-weight: 500;
+}
+
+.register__name {
+  display: flex;
+  gap: 10px;
+}
+
+.input__field {
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border: none;
+  width: 100%;
+  height: 50px;
+  padding: 0 10px 0 45px;
+  border-radius: 30px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.input__field:hover, .input__field:focus {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+::-webkit-input-placeholder {
+  color: #ffffff7c;
+}
+
+.form__input-box i {
+  position: relative;
+  top: -32px;
+  left: 17px;
+  color: #ffffff7c;
+}
+
+.gender select {
+  color: #fff;
+}
+
+select option {
+  margin: 40px;
+  background: rgba(0, 0, 0, 0.3);
+  color: #00000094;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+.gender i {
+  position: relative;
+  top: -32px;
+  left: 17px;
+  color: #ffffff7c;
+}
+
+.submit-btn {
+  font-size: 15px;
+  font-weight: 500;
+  color: #000;
+  height: 45px;
+  width: 100%;
+  border-radius: 30px;
+  border: none;
+  background: #e2e2e290;
+  outline: none;
+  cursor: pointer;
+  transition: 0.25s ease-in-out;
+}
+
+.submit-btn:hover {
+  background: #e2e2e2;
+  box-shadow: 1px 4px 8px 1px #cdcdcd46;
+}
+
+.form__bottom {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.form__bottom-remember {
+  display: flex;
+  gap: 5px;
+}
+
+.form__bottom-terms label a:hover{
+  text-decoration: underline;
+} 
