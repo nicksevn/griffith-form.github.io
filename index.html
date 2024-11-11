@@ -25,18 +25,21 @@
       <div class="nav__logo">
         <a href="#">NKSVN</a>
       </div>
-      <div class="nav__menu">
+      <div class="nav__menu" id="navMenu">
         <ul class="nav__menu-list">
           <li><a href="#" class="link active">Главная</a></li>
           <li><a href="#" class="link">О нас</a></li>
           <li><a href="edit.html" class="link">Эдит</a></li>
-          <li><a href="work.html" class="link">Работа</a></li>
+          <li><a href="work.html" class="link no-work">Работа</a></li>
         </ul>
       </div>
       <div class="nav__btn">
         <button class="btn white-btn" id="log-btn" onclick="login()">Войти</button>
         <button class="btn" id="reg-btn" onclick="register()">Регистрация</button>
       </div>
+      <div class="nav__menu-btn">
+        <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+    </div>
     </nav>
 
     <!-- с формой ломается js(( -->
@@ -132,7 +135,7 @@
 
     </div>
   </div>
-
+  <script src="js/menu_btn.js"></script>
   <script src="js/main.js"></script>
 
 </body>

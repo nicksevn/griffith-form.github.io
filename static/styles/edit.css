@@ -14,3 +14,14 @@ h2 {
   padding-bottom: 30px;
   color: #fff;
 }
+
+@media (max-width: 560px) {
+  video {
+    width: 100%;
+  }
+
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
