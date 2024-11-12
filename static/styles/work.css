@@ -177,6 +177,7 @@ label {
   color: #fff;
   width: 117%;
   margin-bottom: 10px;
+  font-size: 15px;
 }
 
 .textarea__field:hover, .textarea__field:focus {

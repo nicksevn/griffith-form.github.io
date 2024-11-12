@@ -49,7 +49,7 @@
       <h2>Анкетирование</h2>
 
       <div class="job-application">
-        <form action="">
+        <form action="" method="post">
           <div class="name-and-preferences">
             <div class="name">
               <div class="form__input-box">
@@ -73,23 +73,23 @@
               <div class="preferences__container">
                 <label for="biography">Предпочтения</label>
                 <br>
-                <textarea class="textarea__field" id="preferences" name="user__preferences"></textarea>
+                <textarea class="textarea__field" id="preferences" name="user__preferences" placeholder="Напишите что-нибудь"></textarea>
               </div>
-              <label for="">Специальность</label>
+              <label for="speciality-select">Специальность</label>
               <br>
-              <select class="select__field" name="" id="">
-                <option value="">Веб дизайнер</option>
-                <option value="">Графический дизайнер</option>
-                <option value="">Менеджер по продажам</option>
-                <option value="">Фронтенд разработчик</option>
-                <option value="">Бэкенд разработчик</option>
+              <select class="select__field" name="speciality" id="speciality-select">
+                <option value="web-designer">Веб дизайнер</option>
+                <option value="graphic-designer">Графический дизайнер</option>
+                <option value="sales-manager">Менеджер по продажам</option>
+                <option value="frontend-dev">Фронтенд разработчик</option>
+                <option value="backend-dev">Бэкенд разработчик</option>
               </select>
             </div>
           </div>
           <div class="form__input-box porfolio__container">
             <label for="portfolio">Вставьте ссылку на портфолио</label>
             <br>
-            <input class="input__field" type="url" id="portfolio" name="user__portfolio">
+            <input class="input__field" type="url" id="portfolio" name="user__portfolio" placeholder="https://">
           </div>
           <div class="buttons">
             <div class="form__input-box">
